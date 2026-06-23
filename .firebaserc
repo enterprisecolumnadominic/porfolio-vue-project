@@ -1,5 +1,16 @@
 {
   "projects": {
     "default": "house-proj-fff2a"
-  }
+  },
+  "targets": {
+    "house-proj-fff2a": {
+      "hosting": {
+        "portfolio-site": [
+          "profile-dominiccolumna",
+          "profile-dominiccolumna.web.app"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

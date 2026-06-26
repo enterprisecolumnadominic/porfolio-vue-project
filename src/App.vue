@@ -1,87 +1,24 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import TheNavbar from "./views/TheNavbar.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div
+    class="min-h-screen w-full bg-gray-950 text-gray-100 flex flex-col items-center p-0 font-sans antialiased"
+  >
+    <TheNavbar />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <h1>Writing this to Git!</h1>
-      <p>Writing this from local PC</p>
+    <main>
+      <header class="w-full max-w-xl text-center flex flex-col items-center mt-12 mb-8 px-6">
+        <img alt="Vue logo" class="mb-6" src="@/assets/logo.svg" width="125" height="125" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+        <div class="space-y-4">
+          <HelloWorld msg="You did it!" />
+          <h1 class="text-3xl font-extrabold text-white tracking-tight">Writing this to Git!</h1>
+          <p class="text-emerald-400 font-medium">Writing this from local PC</p>
+        </div>
+      </header>
+    </main>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>

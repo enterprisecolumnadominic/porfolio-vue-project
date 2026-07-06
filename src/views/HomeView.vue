@@ -28,7 +28,7 @@
             class="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none"
           >
             Hi, I'm Dominic.<br />
-            Building modern web apps.
+            Building modern web apps testing.
           </h1>
         </div>
 

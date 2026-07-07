@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AboutView from "./views/AboutView.vue";
+import ExperienceView from "./views/ExperienceView.vue";
 import HomeView from "./views/HomeView.vue";
 import TheNavbar from "./views/TheNavbar.vue";
 </script>
@@ -13,6 +14,7 @@ import TheNavbar from "./views/TheNavbar.vue";
     <main class="w-full flex flex-col items-center">
       <HomeView />
       <AboutView />
+      <ExperienceView />
     </main>
   </div>
 </template>

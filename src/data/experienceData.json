@@ -1,0 +1,37 @@
+[
+  {
+    "id": "exp-frontend",
+    "title": "Frontend Engineer",
+    "company": "TechVanguard Solutions",
+    "year": "2024 - Present",
+    "description": "Led the development of highly responsive consumer-facing dashboard interfaces using Vue 3 and TypeScript. Optimized application bundle sizes by 24% and built reusable global component libraries styled with Tailwind CSS."
+  },
+  {
+    "id": "exp-fullstack",
+    "title": "Full-Stack Developer",
+    "company": "PixelCraft Studios",
+    "year": "2022 - 2024",
+    "description": "Engineered single-page applications connected to robust backend REST APIs. Managed secure localized state mechanisms, integrated continuous delivery deployment streams, and refactored heritage codebase structures."
+  },
+  {
+    "id": "exp-junior",
+    "title": "Junior Web Developer",
+    "company": "Nexus Media Agency",
+    "year": "2021 - 2022",
+    "description": "Collaborated on client localization assets, translated Figma ui/ux prototypes into semantic HTML, CSS, and modern JavaScript layouts, and managed structural content updates through headless content platforms."
+  },
+  {
+    "id": "exp-ui-developer",
+    "title": "UI Developer Specialist",
+    "company": "Vortex Digital Labs",
+    "year": "2020 - 2021",
+    "description": "Spearheaded accessibility transformations across client web layouts, matching rigid WCAG standards. Crafted modular utility animations and micro-interactions that boosted active user engagement by 15%."
+  },
+  {
+    "id": "exp-intern",
+    "title": "Software Engineer Intern",
+    "company": "CloudScale Systems",
+    "year": "2020",
+    "description": "Assisted core engineering pods with integration testing sweeps, automated script monitoring, and modular template adjustments. Documented system internal APIs to streamline cross-team onboarding pathways."
+  }
+]

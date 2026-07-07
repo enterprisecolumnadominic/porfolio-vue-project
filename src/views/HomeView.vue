@@ -6,9 +6,7 @@
     2. Added 'pt-24 pb-12 md:py-12' -> On mobile, it gives a safe 96px top buffer zone
        below the navbar, while cleanly reverting back to standard padding on desktop viewports.
   -->
-  <section
-    class="w-full min-h-[calc(100vh-7rem)] flex items-center justify-center pt-24 pb-12 md:py-12 md:-mt-30"
-  >
+  <section id="home" class="w-full max-w-6xl px-6 pt-10 pb-20 mx-auto">
     <!-- Content Constrainer Matrix Track -->
     <div
       class="w-full max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center"

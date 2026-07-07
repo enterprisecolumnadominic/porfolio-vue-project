@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AboutView from "./views/AboutView.vue";
 import HomeView from "./views/HomeView.vue";
 import TheNavbar from "./views/TheNavbar.vue";
 </script>
@@ -8,6 +9,10 @@ import TheNavbar from "./views/TheNavbar.vue";
     class="min-h-screen w-full bg-gray-950 text-gray-100 flex flex-col items-center p-0 font-sans antialiased"
   >
     <TheNavbar />
-    <HomeView />
+
+    <main class="w-full flex flex-col items-center">
+      <HomeView />
+      <AboutView />
+    </main>
   </div>
 </template>

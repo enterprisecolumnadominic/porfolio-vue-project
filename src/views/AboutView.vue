@@ -55,7 +55,7 @@ const aboutItems: AboutItem[] = aboutDataRaw;
           class="relative group max-w-xs md:max-w-none w-full aspect-square rounded-2xl overflow-hidden border border-gray-800 bg-gray-900/40 shadow-2xl"
         >
           <img
-            src="http://localhost:3000/img/about.jpg?auto=format&fit=crop&w=600&q=80"
+            src="https://www.ibuild.ph/sites/default/files/features/web-designers-developers-and-digital-marketing-sevices-Metro-Manila-Philippines.jpg?auto=format&fit=crop&w=600&q=80"
             alt="My Profile Portrait Picture"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"

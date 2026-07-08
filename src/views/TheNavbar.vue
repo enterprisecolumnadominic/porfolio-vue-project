@@ -1,12 +1,5 @@
-<!-- src/views/TheNavbar.vue -->
 <template>
-  <!--
-    HORIZONTAL ALIGNMENT MODIFICATION:
-    Changed 'max-w-4xl' to 'max-w-6xl' to expand the tracking width
-    and match the exact proportions of your updated Hero Banner section.
-  -->
   <nav class="w-full max-w-6xl px-6 h-16 flex items-center justify-between">
-    <!-- LEFT SIDE: Brand Logo Block -->
     <div class="flex items-center space-x-3">
       <img alt="Vue logo" src="@/assets/logo.svg" width="32" height="32" class="object-contain" />
       <a
@@ -17,7 +10,6 @@
       </a>
     </div>
 
-    <!-- CENTER TRACK: Secondary Navigation Links -->
     <div class="flex items-center space-x-8">
       <a
         href="#"
@@ -31,15 +23,15 @@
       >
         About
       </a>
+
       <a
-        href="#projects"
+        href="#experience"
         class="text-gray-300 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm"
       >
-        Projects
+        Experience
       </a>
     </div>
 
-    <!-- RIGHT SIDE: Primary Action CTA -->
     <div class="hidden sm:block">
       <button
         type="button"

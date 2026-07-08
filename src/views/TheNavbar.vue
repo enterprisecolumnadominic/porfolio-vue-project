@@ -33,12 +33,12 @@
     </div>
 
     <div class="hidden sm:block">
-      <button
-        type="button"
-        class="text-sm font-semibold bg-emerald-500 text-gray-950 px-4 py-2 rounded-lg hover:bg-emerald-400 active:scale-95 transition-all shadow-md shadow-emerald-500/10 cursor-pointer"
+      <a
+        href="#contact"
+        class="text-sm font-semibold bg-emerald-500 text-gray-950 px-4 py-2 rounded-lg hover:bg-emerald-400 active:scale-95 transition-all shadow-md shadow-emerald-500/10 cursor-pointer inline-block"
       >
         Hire me
-      </button>
+      </a>
     </div>
   </nav>
 </template>

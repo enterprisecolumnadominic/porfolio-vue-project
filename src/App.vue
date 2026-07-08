@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import AboutView from "./views/AboutView.vue";
+import ContactView from "./views/ContactView.vue";
 import ExperienceView from "./views/ExperienceView.vue";
 import HomeView from "./views/HomeView.vue";
+import TheFooter from "./views/TheFooter.vue";
 import TheNavbar from "./views/TheNavbar.vue";
 </script>
 
@@ -15,6 +17,8 @@ import TheNavbar from "./views/TheNavbar.vue";
       <HomeView />
       <AboutView />
       <ExperienceView />
+      <ContactView />
     </main>
+    <TheFooter />
   </div>
 </template>

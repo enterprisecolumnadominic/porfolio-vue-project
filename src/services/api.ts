@@ -5,25 +5,36 @@ const API_BASE_URL =
 
 export const verifyVisitorSession = async (): Promise<void> => {
   try {
+    // 1. Retrieve the token from localStorage if it exists
+    const savedToken = localStorage.getItem("visitor_bearer_token");
+
+    // 2. Prepare request headers
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+    };
+
+    // 3. Attach the token using the textbook Bearer format if available
+    if (savedToken) {
+      headers["Authorization"] = `Bearer ${savedToken}`;
+    }
+
     const response = await fetch(`${API_BASE_URL}/handleVisitorSession`, {
       method: "POST",
-      credentials: "include", // Required to pass HttpOnly cookies cross-origin
-      headers: {
-        "Content-Type": "application/json",
-      },
+      // REMOVED: credentials: "include" is no longer needed since we are not using cookies!
+      headers: headers,
     });
-
-    if (response.status === 429) {
-      alert("Security Alert: You reached the maximum allowance of 100 refreshes!");
-      return;
-    }
 
     if (!response.ok) {
       throw new Error(`Server responded with status: ${response.status}`);
     }
 
     const data = await response.json();
-    console.log("Visitor profile confirmed:", data);
+    console.log("Visitor profile confirmed statelessly:", data);
+
+    // 4. Save the returned token back to localStorage for the next refresh
+    if (data.token) {
+      localStorage.setItem("visitor_bearer_token", data.token);
+    }
   } catch (err) {
     console.error("Session validation rejected:", err);
   }

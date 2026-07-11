@@ -20,7 +20,7 @@ export const verifyVisitorSession = async (): Promise<void> => {
     });
 
     if (response.status === 429) {
-      alert("Security Alert: You reached the maximum allowance of 50 refreshes per hour!");
+      alert("Security Alert: You reached the maximum allowance of 20 refreshes per hour!");
       return;
     }
 

@@ -1,22 +1,17 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import SuccessModal from "../components/SuccessModal.vue";
+// Import your custom extraction hook
+import { useContactForm } from "../composables/useContactForm";
 
-// Reactive form fields binding structure
-const form = ref({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
-});
-
-// Mock handler tracking submission events
-const handleSendMessage = () => {
-  console.log("Form Submitted Successfully:", form.value);
-  alert(`Thank you, ${form.value.name}! Your mock message has been logged.`);
-
-  // Clear out inputs after hitting send
-  form.value = { name: "", email: "", subject: "", message: "" };
-};
+const {
+  form,
+  isSubmitting,
+  isModalOpen,
+  emailError,
+  validateEmail,
+  handleSendMessage,
+  handleCloseModal,
+} = useContactForm();
 </script>
 
 <template>
@@ -54,16 +49,26 @@ const handleSendMessage = () => {
               />
             </div>
             <div class="flex flex-col space-y-2">
-              <label class="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider"
-                >Email Address</label
-              >
+              <label class="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
+                Email Address
+              </label>
               <input
                 v-model="form.email"
                 type="email"
                 required
+                @input="validateEmail"
                 placeholder="john@example.com"
-                class="w-full h-11 bg-gray-950 border border-gray-800 focus:border-emerald-500/50 rounded-xl px-4 text-sm text-gray-200 placeholder-gray-600 focus:outline-none transition-colors duration-200"
+                :class="[
+                  'w-full h-11 bg-gray-950 border rounded-xl px-4 text-sm text-gray-200 placeholder-gray-600 focus:outline-none transition-colors duration-200',
+                  emailError
+                    ? 'border-rose-500/80 focus:border-rose-500'
+                    : 'border-gray-800 focus:border-emerald-500/50',
+                ]"
               />
+              <!-- Real-time Validation Message Banner -->
+              <span v-if="emailError" class="text-xs font-medium text-rose-400 tracking-wide mt-1">
+                {{ emailError }}
+              </span>
             </div>
           </div>
 
@@ -82,11 +87,13 @@ const handleSendMessage = () => {
 
           <button
             type="submit"
-            class="w-full sm:w-auto text-sm font-semibold bg-emerald-500 text-gray-950 px-6 py-3 rounded-xl hover:bg-emerald-400 active:scale-[0.98] transition-all font-mono tracking-wider font-bold shadow-md shadow-emerald-500/10 cursor-pointer"
+            :disabled="isSubmitting"
+            class="w-full sm:w-auto text-sm font-semibold bg-emerald-500 text-gray-950 px-6 py-3 rounded-xl hover:bg-emerald-400 active:scale-[0.98] transition-all font-mono tracking-wider font-bold shadow-md shadow-emerald-500/10 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Submit Message
+            {{ isSubmitting ? "Sending Message..." : "Submit Message" }}
           </button>
         </form>
+        <SuccessModal :isOpen="isModalOpen" @close="handleCloseModal" />
       </div>
 
       <div class="w-full lg:w-2/5 flex flex-col justify-between gap-6">

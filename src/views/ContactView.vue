@@ -123,12 +123,11 @@ const {
               <p class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">
                 Email Me Directly
               </p>
-              <a
-                href="mailto:hello@logo.dev"
+              <p
                 class="text-white hover:text-emerald-400 transition-colors text-sm font-medium inline-block"
               >
-                hello@logo.dev
-              </a>
+                enterprise.columna.dominic@gmail.com
+              </p>
             </div>
           </div>
 
@@ -155,12 +154,11 @@ const {
               <p class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">
                 Call or Text
               </p>
-              <a
-                href="tel:+14155552671"
+              <p
                 class="text-white hover:text-emerald-400 transition-colors text-sm font-medium inline-block"
               >
-                +1 (415) 555-2671
-              </a>
+                +63 993 644 6066
+              </p>
             </div>
           </div>
 
@@ -192,7 +190,9 @@ const {
               <p class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">
                 Current Location
               </p>
-              <p class="text-gray-300 text-sm font-medium">San Francisco, CA</p>
+              <p class="text-gray-300 text-sm font-medium hover:text-emerald-400">
+                Metro Manila, Philippines
+              </p>
             </div>
           </div>
         </div>

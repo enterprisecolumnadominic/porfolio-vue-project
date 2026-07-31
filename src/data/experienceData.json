@@ -1,37 +1,37 @@
 [
   {
-    "id": "exp-frontend",
-    "title": "Frontend Engineer",
-    "company": "TechVanguard Solutions",
-    "year": "2024 - Present",
-    "description": "Led the development of highly responsive consumer-facing dashboard interfaces using Vue 3 and TypeScript. Optimized application bundle sizes by 24% and built reusable global component libraries styled with Tailwind CSS."
+    "id": "exp-independent",
+    "title": "Full-Stack Developer & Software Engineer",
+    "company": "Independent Projects & Practical Skill Development",
+    "year": "Present",
+    "description": "Architecting and deploying full-stack web applications: built a serverless Vue 3 & Tailwind portfolio with Firestore and reCAPTCHA v3, a .NET Core & React Real Estate portal deployed on Google Cloud Run, and a Python (Flask) & MongoDB e-commerce platform with CI/CD via GitHub Actions."
   },
   {
-    "id": "exp-fullstack",
-    "title": "Full-Stack Developer",
-    "company": "PixelCraft Studios",
-    "year": "2022 - 2024",
-    "description": "Engineered single-page applications connected to robust backend REST APIs. Managed secure localized state mechanisms, integrated continuous delivery deployment streams, and refactored heritage codebase structures."
+    "id": "exp-arcadis",
+    "title": "Software Developer / QA Engineer",
+    "company": "Arcadis Consulting Firm",
+    "year": "Jan 2025 - Jul 2025",
+    "description": "Executed automated E2E regression testing using Playwright to catch edge-case defects. Refactored legacy SQL queries in Azure Cosmos DB to reduce cloud database costs and maintained C# .NET Core MVC API endpoints."
   },
   {
-    "id": "exp-junior",
-    "title": "Junior Web Developer",
-    "company": "Nexus Media Agency",
-    "year": "2021 - 2022",
-    "description": "Collaborated on client localization assets, translated Figma ui/ux prototypes into semantic HTML, CSS, and modern JavaScript layouts, and managed structural content updates through headless content platforms."
+    "id": "exp-tech-mahindra",
+    "title": "Software Developer (.NET & React)",
+    "company": "Tech Mahindra Software Consulting",
+    "year": "Mar 2023 - Jan 2025",
+    "description": "Engineered the transition of legacy ASP.NET Web Forms to C# .NET Core REST APIs and React UI components. Maintained live MSSQL databases with Entity Framework and Dapper, and architected secure RESTful APIs using JWT authentication."
   },
   {
-    "id": "exp-ui-developer",
-    "title": "UI Developer Specialist",
-    "company": "Vortex Digital Labs",
-    "year": "2020 - 2021",
-    "description": "Spearheaded accessibility transformations across client web layouts, matching rigid WCAG standards. Crafted modular utility animations and micro-interactions that boosted active user engagement by 15%."
+    "id": "exp-genpact",
+    "title": "Senior Associate (.NET & Angular)",
+    "company": "Genpact Technology Services",
+    "year": "Aug 2022 - Feb 2023",
+    "description": "Developed responsive Angular interfaces in TypeScript connected to microservice architectures. Integrated RESTful and SOAP APIs, applied AES/Hybrid encryption for sensitive data, and implemented OAuth 2.0 / JWT security."
   },
   {
-    "id": "exp-intern",
-    "title": "Software Engineer Intern",
-    "company": "CloudScale Systems",
-    "year": "2020",
-    "description": "Assisted core engineering pods with integration testing sweeps, automated script monitoring, and modular template adjustments. Documented system internal APIs to streamline cross-team onboarding pathways."
+    "id": "exp-bsc",
+    "title": "Junior .NET Developer",
+    "company": "BSC Technology Services",
+    "year": "Nov 2019 - Oct 2020",
+    "description": "Designed responsive web interfaces using C#, .NET Framework, Razor Pages, and Bootstrap. Applied OOP and MVC design patterns while enforcing code quality through NUnit and xUnit automated unit testing."
   }
 ]

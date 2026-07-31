@@ -2,19 +2,19 @@
   {
     "id": "about-background",
     "title": "My Background",
-    "description": "I am a passionate full-stack developer dedicated to building elegant web applications. With a sharp eye for modern layout engineering and robust UI/UX state management, I transform technical challenges into responsive web solutions.",
+    "description": "My journey began as a kid tinkering with computer software, driven by a deep curiosity about how digital systems operate. That early fascination slowly transformed into a dedicated pursuit of understanding how the internet works and building modern web applications from the ground up.",
     "icon": "https://api.iconify.design/lucide:user.svg?color=%2310b981"
   },
   {
     "id": "about-philosophy",
     "title": "Development Philosophy",
-    "description": "I believe in writing clean, self-documenting code and utilizing modern framework architectures like Vue 3 and Tailwind CSS. Optimization, clean components, and intuitive user experiences are at the heart of every codebase I compile.",
+    "description": "Through years of practical engineering experience, I have learned that writing clean, self-documenting code is the single most valuable practice in software. Prioritizing modular design and readable architecture turns complex technical challenges into reliable solutions.",
     "icon": "https://api.iconify.design/lucide:code-2.svg?color=%2310b981"
   },
   {
     "id": "about-goals",
     "title": "Future Focus",
-    "description": "Currently specializing in client-side application performance, scalable state machines, and continuous delivery pipelines. I am always looking forward to collaborating on high-impact projects that push structural boundaries.",
+    "description": "My goal remains tightly aligned with clean code principles and solid system architecture. By creating well-maintained, modular codebases that are effortless to navigate, I ensure projects remain scalable, resilient, and enjoyable for teams to build upon.",
     "icon": "https://api.iconify.design/lucide:rocket.svg?color=%2310b981"
   }
 ]

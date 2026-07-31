@@ -19,7 +19,8 @@ const experiences: WorkExperience[] = experienceDataRaw;
     <div class="text-center flex flex-col items-center mb-12">
       <h2 class="text-3xl font-black text-white tracking-tight sm:text-4xl">Work Experience</h2>
       <span class="text-xl font-bold text-emerald-400 tracking-wide mt-3"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span
+        >A timeline of continuous growth, system modernization, and resilient software
+        delivery</span
       >
       <div class="h-1 w-12 bg-emerald-500 mt-2 rounded"></div>
     </div>

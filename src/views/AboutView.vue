@@ -17,7 +17,7 @@ const aboutItems: AboutItem[] = aboutDataRaw;
     <div class="text-center flex flex-col items-center mb-12">
       <h2 class="text-3xl font-black text-white tracking-tight sm:text-4xl">About Me</h2>
       <span class="text-xl font-bold text-emerald-400 tracking-wide mt-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Transforming a lifelong passion for software into scalable, production-ready web solutions.
       </span>
       <div class="h-1 w-12 bg-emerald-500 mt-2 rounded"></div>
     </div>
@@ -67,19 +67,26 @@ const aboutItems: AboutItem[] = aboutDataRaw;
       </div>
 
       <div class="w-full md:w-3/5 space-y-8 text-center md:text-left md:pl-8">
-        <span class="text-1xl font-bold text-gray-400 tracking-wide mt-8">Trust us</span>
+        <span
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold tracking-wider text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 rounded-full uppercase shadow-sm"
+        >
+          <span class="w-2bg-emerald-400"></span>
+          Continuous Delivery & Quality
+        </span>
 
         <h3 class="text-2xl font-bold text-white tracking-wide text-center">
           My Engineering Journey
         </h3>
 
-        <p class="text-gray-400 text-base leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-          ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contact Me Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-          dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p class="text-gray-300 text-base leading-relaxed font-normal">
+          For me, software development has never been just about writing lines of code—it is a
+          continuous journey driven by relentless curiosity and a passion for growth. Over the past
+          5+ years, every legacy system I modernized and every database bottleneck I solved taught
+          me that true software craftsmanship lies in resilience and care. Bridging robust C# .NET
+          Core backends with intuitive Vue 3 and React front end, while safeguarding quality through
+          Playwright automation, aren't just technical milestones to me; they are lessons in how to
+          build software people can truly rely on. I view engineering as a lifelong practice of
+          learning, adapting, and elevating the human experience through technology.
         </p>
       </div>
     </div>

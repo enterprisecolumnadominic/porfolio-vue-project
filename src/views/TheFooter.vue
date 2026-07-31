@@ -6,7 +6,7 @@
 
         <div class="flex items-center justify-center space-x-6">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/dominic-c-957a60168/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-emerald-500 hover:text-emerald-400 transition-colors duration-200 flex items-center"
@@ -84,10 +84,10 @@
 
         <div class="text-center sm:text-right">
           <a
-            href="mailto:hello@logo.dev"
+            href="mailto:enterprise.columna.dominic@gmail.com"
             class="text-sm font-mono font-medium text-emerald-500 hover:text-emerald-400 transition-colors duration-200 tracking-wide inline-block"
           >
-            hello@logo.dev
+            enterprise.columna.dominic@gmail.com
           </a>
         </div>
       </div>

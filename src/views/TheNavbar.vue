@@ -19,20 +19,20 @@
     <div class="flex items-center space-x-8">
       <a
         href="#"
-        class="text-gray-300 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
+        class="text-gray-400 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
       >
         Home
       </a>
       <a
         href="#about"
-        class="text-gray-300 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
+        class="text-gray-400 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
       >
         About
       </a>
 
       <a
         href="#experience"
-        class="text-gray-300 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
+        class="text-gray-400 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
       >
         Experience
       </a>

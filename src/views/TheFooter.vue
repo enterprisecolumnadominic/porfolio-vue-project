@@ -87,7 +87,7 @@
             href="mailto:enterprise.columna.dominic@gmail.com"
             class="text-sm font-mono font-medium text-emerald-500 hover:text-emerald-400 transition-colors duration-200 tracking-wide inline-block"
           >
-            enterprise.columna.dominic@gmail.com
+            columnadominic@gmail.com
           </a>
         </div>
       </div>
@@ -95,7 +95,7 @@
       <p
         class="text-[11px] font-mono text-gray-600 tracking-wider text-center pt-2 border-t border-gray-900/20"
       >
-        &copy; 2026 Logo.dev. All rights reserved.
+        &copy; 2026 columna.dominic. All rights reserved.
       </p>
     </div>
   </footer>

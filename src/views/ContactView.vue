@@ -126,7 +126,7 @@ const {
               <p
                 class="text-white hover:text-emerald-400 transition-colors text-sm font-medium inline-block"
               >
-                enterprise.columna.dominic@gmail.com
+                columnadominic@gmail.com
               </p>
             </div>
           </div>

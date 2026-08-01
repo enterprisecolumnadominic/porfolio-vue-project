@@ -1,21 +1,24 @@
 <template>
   <nav class="w-full max-w-6xl px-6 h-16 flex items-center justify-between">
     <div class="flex items-center space-x-3">
+      <!-- Return to Top Link -->
       <a
         href="#"
         class="flex items-center space-x-3 group text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition tracking-wide leading-none"
         aria-label="Return to top"
       >
+        <!-- Updated image tag referencing your brand logo -->
         <img
           alt="Vue logo"
-          src="@/assets/logo.svg"
-          width="180"
-          height="32"
-          class="object-contain group-hover:scale-105 transition-transform duration-200"
+          src="https://firebase.google.com/static/downloads/brand-guidelines/SVG/logo-standard.svg"
+          width="40"
+          height="40"
+          class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
         />
       </a>
     </div>
 
+    <!-- Navigation Links -->
     <div class="flex items-center space-x-8">
       <a
         href="#"
@@ -29,7 +32,6 @@
       >
         About
       </a>
-
       <a
         href="#experience"
         class="text-gray-400 hover:text-emerald-400 transition duration-150 tracking-wider text-xs sm:text-sm transition-transform duration-400 hover:scale-[1.1]"
@@ -38,6 +40,7 @@
       </a>
     </div>
 
+    <!-- Contact Button -->
     <div class="hidden sm:block">
       <a
         href="#contact"

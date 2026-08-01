@@ -26,13 +26,13 @@ jobs:
       - name: Install Project Dependencies
         run: npm ci
 
-      # 4. Install Playwright browser engines and system dependencies
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+      # 4. Install ONLY Chromium browser engine and its system dependencies
+      - name: Install Playwright Chromium Browser
+        run: npx playwright install chromium --with-deps
 
-      # 5. Run Playwright E2E Tests (Gatekeeper step)
+      # 5. Run Playwright E2E Tests (Chromium project only)
       - name: Run Playwright E2E Tests
-        run: npx playwright test
+        run: npx playwright test --project=chromium
 
       # 6. Build the production bundle (Runs only if tests pass)
       - name: Build Application

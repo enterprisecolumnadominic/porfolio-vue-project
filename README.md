@@ -1,73 +1,82 @@
-# porfolio-vue-project
+Portfolio Web Application
+A modern, high-performance personal portfolio web application built with Vue 3, Tailwind CSS, and Firebase. This project showcases legacy modernization expertise, full-stack capabilities, continuous integration, and automated testing.
 
-This template should help get you started developing with Vue 3 in Vite.
+Features & Highlights
+Frontend Architecture: Built using Vue 3 and styled with Tailwind CSS for a fully responsive, clean, and accessible UI.
 
-## Recommended IDE Setup
+Serverless Backend: Powered by Firebase (Hosting, Firestore, and reCAPTCHA v3) for seamless data storage and security.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Automated End-to-End Testing: Configured with Playwright to ensure high reliability and catch UI regressions across major browser engines.
 
-## Recommended Browser Setup
+Modern Tooling: Powered by Vite for fast development builds and modules HMR.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Tech Stack
+Framework: Vue 3
 
-## Type Support for `.vue` Imports in TS
+Build Tool: Vite
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Styling: Tailwind CSS
 
-## Customize configuration
+Database & Hosting: Firebase
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Testing: Playwright & Vitest
 
-## Project Setup
+Language: TypeScript / JavaScript
 
-```sh
+Prerequisites
+Make sure you have the following installed on your machine:
+
+Node.js (v18+ recommended)
+
+npm or pnpm / yarn
+
+Project Setup
+1. Install Dependencies
+Bash
 npm install
-```
+2. Development Server
+Run the local development server with hot-reload:
 
-### Compile and Hot-Reload for Development
-
-```sh
+Bash
 npm run dev
-```
+3. Build & Type-Check
+Check TypeScript types and compile the project for production:
 
-### Type-Check, Compile and Minify for Production
-
-```sh
+Bash
 npm run build
-```
+ Testing
+End-to-End Tests (Playwright)
+Install browser binaries required for Playwright (first-time setup only):
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
+Bash
 npx playwright install
+Run tests across browsers:
 
-# When testing on CI, must build the project first
+Bash
+# Run all end-to-end tests
+npm run test:e2e
+
+# Run tests on Chromium only
+npm run test:e2e -- --project=chromium
+
+# Run tests in debug mode
+npm run test:e2e -- --debug
+Unit Tests (Vitest)
+Run unit tests:
+
+Bash
+npm run test:unit
+Code Quality & Formatting
+Lint and check formatting across the codebase:
+
+Bash
+npm run lint
+Deployment
+This project is configured to deploy via Firebase Hosting.
+
+Bash
+# Build production assets
 npm run build
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+# Deploy to Firebase
+firebase deploy

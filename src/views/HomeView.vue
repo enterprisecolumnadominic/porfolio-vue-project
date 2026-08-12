@@ -56,7 +56,7 @@
             className="w-full h-full rounded-2xl border border-gray-800 bg-gray-900/50 shadow-2xl backdrop-blur-sm overflow-hidden transition-transform duration-300 group-hover:scale-[1.01]"
           >
             <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQFwFjxKbmWO0Q/profile-displayphoto-scale_400_400/B56Z7fnUszGQAg-/0/1781868090269?e=1785974400&v=beta&t=e4u57xyjGMXabA9HAHzlU123viMlnCCKlOw1i0FzPu8"
+              src="/profile-pic.jpg"
               alt="Hero illustration profile"
               className="w-full h-full object-cover"
             />

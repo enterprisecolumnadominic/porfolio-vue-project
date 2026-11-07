@@ -12,7 +12,7 @@ interface SendEmailResponse {
   status?: string;
   message?: string;
   token: string;
-  emailsRemainingInHour?: number;
+  emailsRemainingInWindow?: number;
 }
 
 export function useContactForm() {
@@ -94,9 +94,9 @@ export function useContactForm() {
       // ✅ Save the updated token with incremented email counter
       localStorage.setItem("visitor_bearer_token", data.token);
 
-      if (data.emailsRemainingInHour !== undefined) {
+      if (data.emailsRemainingInWindow !== undefined) {
         console.log(
-          `[Mail Service] Email sent successfully! Remaining email attempts this hour: ${data.emailsRemainingInHour}`,
+          `[Mail Service] Email sent successfully! Remaining email attempts in window: ${data.emailsRemainingInWindow}`,
         );
       } else {
         console.log("[Mail Service] Email sent successfully!");

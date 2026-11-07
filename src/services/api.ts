@@ -32,7 +32,7 @@ export const verifyVisitorSession = async (): Promise<void> => {
     console.log("Visitor token verified. Remainder this hour:", data.requestsRemainingInHour);
 
     // Only save the token on first load if it doesn't already exist locally
-    if (data.token && !localStorage.getItem("visitor_bearer_token")) {
+    if (data.token) {
       localStorage.setItem("visitor_bearer_token", data.token);
     }
   } catch (err) {

@@ -3,18 +3,18 @@
     "id": "about-background",
     "title": "My Background",
     "description": "My journey began as a kid tinkering with computer software, driven by a deep curiosity about how digital systems operate. That early fascination slowly transformed into a dedicated pursuit of understanding how the internet works and building modern web applications from the ground up.",
-    "icon": "https://api.iconify.design/lucide:user.svg?color=%2310b981"
+    "icon": "bi--house-door-fill.svg"
   },
   {
     "id": "about-philosophy",
     "title": "Development Philosophy",
     "description": "Through years of practical engineering experience, I have learned that writing clean, self-documenting code is the single most valuable practice in software. Prioritizing modular design and readable architecture turns complex technical challenges into reliable solutions.",
-    "icon": "https://api.iconify.design/lucide:code-2.svg?color=%2310b981"
+    "icon": "at-icons--book.svg"
   },
   {
     "id": "about-goals",
     "title": "Future Focus",
     "description": "My goal remains tightly aligned with clean code principles and solid system architecture. By creating well-maintained, modular codebases that are effortless to navigate, I ensure projects remain scalable, resilient, and enjoyable for teams to build upon.",
-    "icon": "https://api.iconify.design/lucide:rocket.svg?color=%2310b981"
+    "icon": "charm--rocket.svg"
   }
 ]

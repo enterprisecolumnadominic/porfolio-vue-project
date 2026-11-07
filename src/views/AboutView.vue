@@ -9,6 +9,9 @@ interface AboutItem {
   icon: string;
 }
 
+const getImageUrl = (name: string) => {
+  return new URL(`../assets/${name}`, import.meta.url).href;
+};
 const aboutItems: AboutItem[] = aboutDataRaw;
 </script>
 
@@ -32,9 +35,13 @@ const aboutItems: AboutItem[] = aboutDataRaw;
           class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200"
         >
           <img
-            :src="item.icon"
+            :src="getImageUrl(item.icon)"
             :alt="item.title + ' icon'"
             class="w-6 h-6 object-contain"
+            style="
+              filter: brightness(0) saturate(100%) invert(77%) sepia(29%) saturate(836%)
+                hue-rotate(101deg) brightness(94%) contrast(92%);
+            "
             loading="lazy"
           />
         </div>
